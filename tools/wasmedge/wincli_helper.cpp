@@ -44,3 +44,9 @@ const char **WasmEdge_CommandLineToUTF8ArgvW(const wchar_t *CmdLine,
   return Argv;
 }
 #endif
+if __name__ == "__main__":  # pragma: no cover
+    from rich.console import Console
+
+    c = Console()
+    c.print("[on blue]Hello", justify="right")
+    c.log("[on blue]hello", justify="right")
